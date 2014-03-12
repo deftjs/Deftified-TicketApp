@@ -114,11 +114,16 @@
      * List of package names to require for the cmd build process
      */
     "requires": [
+        "sencha-charts"
     ],
 
     /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "16abf003-0f3b-4525-a3c4-345985feeec0"
+    "theme": "ext-theme-neptune",
+
+    "classpath": "${app.dir}/app,${app.dir}/app.js,${framework.dir}/examples/ux",
+
+    "id": "0fac42e4-0b7e-4753-9802-1a3427a19d1e"
 }

@@ -4,11 +4,10 @@
     Sencha Cmd when upgrading.
 */
 
-
 Ext.application({
     name: 'Ticket',
 
-    extend: 'Ticket.Application',
+    requires: ["Ticket.*"],
     
-    autoCreateViewport: true
+    extend: 'Ticket.Application'
 });
