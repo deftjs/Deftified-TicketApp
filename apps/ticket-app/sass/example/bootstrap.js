@@ -1230,13 +1230,22 @@ Ext.Loader.addClassPathMappings({
   "Ext.app.ViewModel": "../../../../sdk/packages/sencha-core/src/app/ViewModel.js",
   "Ext.app.bind": "../../../../sdk/packages/sencha-core/src/app/bind",
   "Ext.browser": "../../../../sdk/packages/sencha-core/src/env/Browser.js",
+  "Ext.chart": "../../../../sdk/packages/sencha-charts/src/chart",
+  "Ext.chart.LegendBase": "../../../../sdk/packages/sencha-charts/src-ext/chart/LegendBase.js",
+  "Ext.chart.Tip": "../../../../sdk/packages/sencha-charts/src-ext/chart/Tip.js",
+  "Ext.chart.TipSurface": "../../../../sdk/packages/sencha-charts/src-ext/chart/TipSurface.js",
+  "Ext.chart.interactions.ItemInfo": "../../../../sdk/packages/sencha-charts/src-ext/chart/interactions/ItemInfo.js",
+  "Ext.chart.overrides": "../../../../sdk/packages/sencha-charts/src-ext/chart/overrides",
   "Ext.class": "../../../../sdk/packages/sencha-core/src/class",
-  "Ext.classic": "../../../../sdk/ext/packages/ext-theme-classic/overrides",
   "Ext.data": "../../../../sdk/packages/sencha-core/src/data",
   "Ext.data.session.XmlRequest": "../../../../sdk/packages/sencha-core/src/data/api/XmlRequest.js",
   "Ext.direct": "../../../../sdk/packages/sencha-core/src/direct",
   "Ext.dom": "../../../../sdk/packages/sencha-core/src/dom",
   "Ext.dom.Layer": "../../../../sdk/ext/src/dom/Layer.js",
+  "Ext.draw": "../../../../sdk/packages/sencha-charts/src/draw",
+  "Ext.draw.ContainerBase": "../../../../sdk/packages/sencha-charts/src-ext/draw/ContainerBase.js",
+  "Ext.draw.SurfaceBase": "../../../../sdk/packages/sencha-charts/src-ext/draw/SurfaceBase.js",
+  "Ext.draw.engine.SvgContext.Gradient": "../../../../sdk/packages/sencha-charts/src/draw/engine/SvgContext.js",
   "Ext.env": "../../../../sdk/packages/sencha-core/src/env",
   "Ext.event": "../../../../sdk/packages/sencha-core/src/event",
   "Ext.feature": "../../../../sdk/packages/sencha-core/src/env/Feature.js",
@@ -1273,7 +1282,12 @@ Ext.Loader.addClassPathMappings({
   "Ext.util.Queue": "../../../../sdk/ext/src/util/Queue.js",
   "Ext.util.Renderable": "../../../../sdk/ext/src/util/Renderable.js",
   "Ext.util.TextMetrics": "../../../../sdk/ext/src/util/TextMetrics.js",
-  "Ticket": "../../app"
+  "Ext.ux": "../../../../sdk/ext/examples/ux",
+  "Ext.ux.desktop.TrayClock": "../../../../sdk/ext/examples/ux/desktop/TaskBar.js",
+  "ExtThemeNeptune": "../../../../sdk/ext/packages/ext-theme-neptune/overrides",
+  "Ticket": "../../app",
+  "Ticket.EntitySimlet": "../../app/SimData.js",
+  "Ticket.model.Ticket": "../../app/model/Ticket.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractManager": [],
@@ -1353,7 +1367,73 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.button.Split": [
     "Ext.SplitButton"
   ],
-  "Ext.classic.toolbar.Toolbar": [],
+  "Ext.chart.AbstractChart": [],
+  "Ext.chart.CartesianChart": [],
+  "Ext.chart.Chart": [],
+  "Ext.chart.Legend": [],
+  "Ext.chart.LegendBase": [],
+  "Ext.chart.MarkerHolder": [],
+  "Ext.chart.Markers": [],
+  "Ext.chart.PolarChart": [],
+  "Ext.chart.SpaceFillingChart": [],
+  "Ext.chart.Tip": [],
+  "Ext.chart.TipSurface": [],
+  "Ext.chart.axis.Axis": [],
+  "Ext.chart.axis.Category": [],
+  "Ext.chart.axis.Numeric": [],
+  "Ext.chart.axis.Time": [],
+  "Ext.chart.axis.layout.CombineDuplicate": [],
+  "Ext.chart.axis.layout.Continuous": [],
+  "Ext.chart.axis.layout.Discrete": [],
+  "Ext.chart.axis.layout.Layout": [],
+  "Ext.chart.axis.segmenter.Names": [],
+  "Ext.chart.axis.segmenter.Numeric": [],
+  "Ext.chart.axis.segmenter.Segmenter": [],
+  "Ext.chart.axis.segmenter.Time": [],
+  "Ext.chart.axis.sprite.Axis": [],
+  "Ext.chart.grid.CircularGrid": [],
+  "Ext.chart.grid.HorizontalGrid": [],
+  "Ext.chart.grid.RadialGrid": [],
+  "Ext.chart.grid.VerticalGrid": [],
+  "Ext.chart.interactions.Abstract": [],
+  "Ext.chart.interactions.CrossZoom": [],
+  "Ext.chart.interactions.Crosshair": [],
+  "Ext.chart.interactions.ItemHighlight": [],
+  "Ext.chart.interactions.ItemInfo": [],
+  "Ext.chart.interactions.PanZoom": [],
+  "Ext.chart.interactions.Rotate": [],
+  "Ext.chart.interactions.RotatePie3D": [],
+  "Ext.chart.label.Callout": [],
+  "Ext.chart.label.Label": [],
+  "Ext.chart.overrides.AbstractChart": [],
+  "Ext.chart.series.Area": [],
+  "Ext.chart.series.Bar": [],
+  "Ext.chart.series.CandleStick": [],
+  "Ext.chart.series.Cartesian": [],
+  "Ext.chart.series.Gauge": [],
+  "Ext.chart.series.ItemPublisher": [],
+  "Ext.chart.series.Line": [],
+  "Ext.chart.series.Pie": [],
+  "Ext.chart.series.Pie3D": [],
+  "Ext.chart.series.Polar": [],
+  "Ext.chart.series.Radar": [],
+  "Ext.chart.series.Scatter": [],
+  "Ext.chart.series.Series": [],
+  "Ext.chart.series.StackedCartesian": [],
+  "Ext.chart.series.sprite.Aggregative": [],
+  "Ext.chart.series.sprite.Area": [],
+  "Ext.chart.series.sprite.Bar": [],
+  "Ext.chart.series.sprite.CandleStick": [],
+  "Ext.chart.series.sprite.Cartesian": [],
+  "Ext.chart.series.sprite.Line": [],
+  "Ext.chart.series.sprite.Pie3DPart": [],
+  "Ext.chart.series.sprite.PieSlice": [],
+  "Ext.chart.series.sprite.Polar": [],
+  "Ext.chart.series.sprite.Radar": [],
+  "Ext.chart.series.sprite.Scatter": [],
+  "Ext.chart.series.sprite.StackedCartesian": [],
+  "Ext.chart.theme.Base": [],
+  "Ext.chart.theme.Theme": [],
   "Ext.container.ButtonGroup": [
     "Ext.ButtonGroup"
   ],
@@ -1578,6 +1658,51 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.core.DomQuery",
     "Ext.DomQuery"
   ],
+  "Ext.draw.Animator": [],
+  "Ext.draw.Color": [],
+  "Ext.draw.Container": [
+    "Ext.draw.Component"
+  ],
+  "Ext.draw.ContainerBase": [],
+  "Ext.draw.Draw": [],
+  "Ext.draw.LimitedCache": [],
+  "Ext.draw.Matrix": [],
+  "Ext.draw.Path": [],
+  "Ext.draw.SegmentTree": [],
+  "Ext.draw.Solver": [],
+  "Ext.draw.Surface": [],
+  "Ext.draw.SurfaceBase": [],
+  "Ext.draw.TextMeasurer": [],
+  "Ext.draw.TimingFunctions": [],
+  "Ext.draw.engine.Canvas": [],
+  "Ext.draw.engine.Svg": [],
+  "Ext.draw.engine.SvgContext": [],
+  "Ext.draw.engine.SvgContext.Gradient": [],
+  "Ext.draw.engine.SvgExporter": [],
+  "Ext.draw.gradient.Gradient": [],
+  "Ext.draw.gradient.GradientDefinition": [],
+  "Ext.draw.gradient.Linear": [],
+  "Ext.draw.gradient.Radial": [],
+  "Ext.draw.modifier.Animation": [],
+  "Ext.draw.modifier.Highlight": [],
+  "Ext.draw.modifier.Modifier": [],
+  "Ext.draw.modifier.Target": [],
+  "Ext.draw.sprite.AnimationParser": [],
+  "Ext.draw.sprite.Arc": [],
+  "Ext.draw.sprite.AttributeDefinition": [],
+  "Ext.draw.sprite.AttributeParser": [],
+  "Ext.draw.sprite.Circle": [],
+  "Ext.draw.sprite.Composite": [],
+  "Ext.draw.sprite.Ellipse": [],
+  "Ext.draw.sprite.EllipticalArc": [],
+  "Ext.draw.sprite.Image": [],
+  "Ext.draw.sprite.Instancing": [],
+  "Ext.draw.sprite.Line": [],
+  "Ext.draw.sprite.Path": [],
+  "Ext.draw.sprite.Rect": [],
+  "Ext.draw.sprite.Sector": [],
+  "Ext.draw.sprite.Sprite": [],
+  "Ext.draw.sprite.Text": [],
   "Ext.event.Controller": [],
   "Ext.event.Dispatcher": [],
   "Ext.event.Event": [
@@ -2177,6 +2302,80 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.util.translatable.CssTransform": [],
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.BoxReorderer": [],
+  "Ext.ux.CellDragDrop": [],
+  "Ext.ux.DataTip": [],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.ux.FieldReplicator": [],
+  "Ext.ux.GMapPanel": [],
+  "Ext.ux.GroupTabPanel": [],
+  "Ext.ux.GroupTabRenderer": [],
+  "Ext.ux.IFrame": [],
+  "Ext.ux.LiveSearchGridPanel": [],
+  "Ext.ux.PreviewPlugin": [],
+  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
+  "Ext.ux.TabCloseMenu": [],
+  "Ext.ux.TabReorderer": [],
+  "Ext.ux.TabScrollerMenu": [],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.TreePicker": [],
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [],
+  "Ext.ux.ajax.XmlSimlet": [],
+  "Ext.ux.dashboard.GoogleRssPart": [],
+  "Ext.ux.dashboard.GoogleRssView": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "Ext.data.PagingMemoryProxy"
+  ],
+  "Ext.ux.dd.CellFieldDropZone": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "Ext.ux.desktop.App": [],
+  "Ext.ux.desktop.Desktop": [],
+  "Ext.ux.desktop.Module": [],
+  "Ext.ux.desktop.ShortcutModel": [],
+  "Ext.ux.desktop.StartMenu": [],
+  "Ext.ux.desktop.TaskBar": [],
+  "Ext.ux.desktop.TrayClock": [],
+  "Ext.ux.desktop.Video": [],
+  "Ext.ux.desktop.Wallpaper": [],
+  "Ext.ux.event.Driver": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [],
+  "Ext.ux.form.ItemSelector": [
+    "Ext.ux.ItemSelector"
+  ],
+  "Ext.ux.form.MultiSelect": [
+    "Ext.ux.Multiselect"
+  ],
+  "Ext.ux.form.SearchField": [],
+  "Ext.ux.google.Api": [],
+  "Ext.ux.google.Feeds": [],
+  "Ext.ux.grid.FiltersFeature": [],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.grid.filter.BooleanFilter": [],
+  "Ext.ux.grid.filter.DateFilter": [],
+  "Ext.ux.grid.filter.DateTimeFilter": [],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.grid.filter.ListFilter": [],
+  "Ext.ux.grid.filter.NumericFilter": [],
+  "Ext.ux.grid.filter.StringFilter": [],
+  "Ext.ux.grid.menu.ListMenu": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "Ext.ux.StatusBar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "Ext.view.AbstractView": [],
   "Ext.view.BoundList": [
     "Ext.BoundList"
@@ -2213,10 +2412,56 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.window.Window": [
     "Ext.Window"
   ],
+  "ExtThemeNeptune.Component": [],
+  "ExtThemeNeptune.container.ButtonGroup": [],
+  "ExtThemeNeptune.form.field.HtmlEditor": [],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.grid.column.RowNumberer": [],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "ExtThemeNeptune.menu.Separator": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "ExtThemeNeptune.panel.Table": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "ExtThemeNeptune.toolbar.Paging": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
   "Ticket.Application": [],
-  "Ticket.controller.Main": [],
-  "Ticket.view.Main": [],
-  "Ticket.view.Viewport": []
+  "Ticket.EntitySimlet": [],
+  "Ticket.LoginManager": [],
+  "Ticket.SimData": [],
+  "Ticket.controller.Root": [],
+  "Ticket.model.Base": [],
+  "Ticket.model.Comment": [],
+  "Ticket.model.Group": [],
+  "Ticket.model.Organization": [],
+  "Ticket.model.Project": [],
+  "Ticket.model.Ticket": [],
+  "Ticket.model.TicketOpenSummary": [],
+  "Ticket.model.TicketStatusSummary": [],
+  "Ticket.model.User": [],
+  "Ticket.override.data.field.Date": [],
+  "Ticket.override.grid.column.Date": [],
+  "Ticket.view.dashboard.Dashboard": [],
+  "Ticket.view.dashboard.DashboardController": [],
+  "Ticket.view.dashboard.DashboardModel": [],
+  "Ticket.view.login.Login": [],
+  "Ticket.view.login.LoginController": [],
+  "Ticket.view.login.LoginModel": [],
+  "Ticket.view.main.Main": [],
+  "Ticket.view.main.MainController": [],
+  "Ticket.view.main.MainModel": [],
+  "Ticket.view.ticket.Detail": [],
+  "Ticket.view.ticket.DetailController": [],
+  "Ticket.view.ticket.DetailModel": [],
+  "Ticket.view.ticket.Search": [],
+  "Ticket.view.ticket.SearchController": [],
+  "Ticket.view.ticket.SearchModel": [],
+  "Ticket.view.user.Group": [],
+  "Ticket.view.user.GroupController": [],
+  "Ticket.view.user.GroupModel": [],
+  "Ticket.view.user.User": [],
+  "Ticket.view.user.UserController": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractManager": [],
@@ -2296,7 +2541,162 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.button.Split": [
     "widget.splitbutton"
   ],
-  "Ext.classic.toolbar.Toolbar": [],
+  "Ext.chart.AbstractChart": [],
+  "Ext.chart.CartesianChart": [
+    "widget.cartesian"
+  ],
+  "Ext.chart.Chart": [
+    "widget.chart"
+  ],
+  "Ext.chart.Legend": [
+    "widget.legend"
+  ],
+  "Ext.chart.LegendBase": [],
+  "Ext.chart.MarkerHolder": [],
+  "Ext.chart.Markers": [],
+  "Ext.chart.PolarChart": [
+    "widget.polar"
+  ],
+  "Ext.chart.SpaceFillingChart": [
+    "widget.spacefilling"
+  ],
+  "Ext.chart.Tip": [],
+  "Ext.chart.TipSurface": [],
+  "Ext.chart.axis.Axis": [
+    "widget.axis"
+  ],
+  "Ext.chart.axis.Category": [
+    "axis.category"
+  ],
+  "Ext.chart.axis.Numeric": [
+    "axis.numeric",
+    "axis.radial"
+  ],
+  "Ext.chart.axis.Time": [
+    "axis.time"
+  ],
+  "Ext.chart.axis.layout.CombineDuplicate": [
+    "axisLayout.combineDuplicate"
+  ],
+  "Ext.chart.axis.layout.Continuous": [
+    "axisLayout.continuous"
+  ],
+  "Ext.chart.axis.layout.Discrete": [
+    "axisLayout.discrete"
+  ],
+  "Ext.chart.axis.layout.Layout": [],
+  "Ext.chart.axis.segmenter.Names": [
+    "segmenter.names"
+  ],
+  "Ext.chart.axis.segmenter.Numeric": [
+    "segmenter.numeric"
+  ],
+  "Ext.chart.axis.segmenter.Segmenter": [],
+  "Ext.chart.axis.segmenter.Time": [
+    "segmenter.time"
+  ],
+  "Ext.chart.axis.sprite.Axis": [],
+  "Ext.chart.grid.CircularGrid": [
+    "grid.circular"
+  ],
+  "Ext.chart.grid.HorizontalGrid": [
+    "grid.horizontal"
+  ],
+  "Ext.chart.grid.RadialGrid": [
+    "grid.radial"
+  ],
+  "Ext.chart.grid.VerticalGrid": [
+    "grid.vertical"
+  ],
+  "Ext.chart.interactions.Abstract": [
+    "widget.interaction"
+  ],
+  "Ext.chart.interactions.CrossZoom": [
+    "interaction.crosszoom"
+  ],
+  "Ext.chart.interactions.Crosshair": [
+    "interaction.crosshair"
+  ],
+  "Ext.chart.interactions.ItemHighlight": [
+    "interaction.itemhighlight"
+  ],
+  "Ext.chart.interactions.ItemInfo": [
+    "interaction.iteminfo"
+  ],
+  "Ext.chart.interactions.PanZoom": [
+    "interaction.panzoom"
+  ],
+  "Ext.chart.interactions.Rotate": [
+    "interaction.rotate"
+  ],
+  "Ext.chart.interactions.RotatePie3D": [
+    "interaction.rotatePie3d"
+  ],
+  "Ext.chart.label.Callout": [],
+  "Ext.chart.label.Label": [],
+  "Ext.chart.overrides.AbstractChart": [],
+  "Ext.chart.series.Area": [
+    "series.area"
+  ],
+  "Ext.chart.series.Bar": [
+    "series.bar"
+  ],
+  "Ext.chart.series.CandleStick": [
+    "series.candlestick"
+  ],
+  "Ext.chart.series.Cartesian": [],
+  "Ext.chart.series.Gauge": [
+    "series.gauge"
+  ],
+  "Ext.chart.series.ItemPublisher": [],
+  "Ext.chart.series.Line": [
+    "series.line"
+  ],
+  "Ext.chart.series.Pie": [
+    "series.pie"
+  ],
+  "Ext.chart.series.Pie3D": [
+    "series.pie3d"
+  ],
+  "Ext.chart.series.Polar": [],
+  "Ext.chart.series.Radar": [
+    "series.radar"
+  ],
+  "Ext.chart.series.Scatter": [
+    "series.scatter"
+  ],
+  "Ext.chart.series.Series": [],
+  "Ext.chart.series.StackedCartesian": [],
+  "Ext.chart.series.sprite.Aggregative": [],
+  "Ext.chart.series.sprite.Area": [
+    "sprite.areaSeries"
+  ],
+  "Ext.chart.series.sprite.Bar": [
+    "sprite.barSeries"
+  ],
+  "Ext.chart.series.sprite.CandleStick": [
+    "sprite.candlestickSeries"
+  ],
+  "Ext.chart.series.sprite.Cartesian": [],
+  "Ext.chart.series.sprite.Line": [
+    "sprite.lineSeries"
+  ],
+  "Ext.chart.series.sprite.Pie3DPart": [
+    "sprite.pie3dPart"
+  ],
+  "Ext.chart.series.sprite.PieSlice": [
+    "sprite.pieslice"
+  ],
+  "Ext.chart.series.sprite.Polar": [],
+  "Ext.chart.series.sprite.Radar": [
+    "sprite.radar"
+  ],
+  "Ext.chart.series.sprite.Scatter": [
+    "sprite.scatterSeries"
+  ],
+  "Ext.chart.series.sprite.StackedCartesian": [],
+  "Ext.chart.theme.Base": [],
+  "Ext.chart.theme.Theme": [],
   "Ext.container.ButtonGroup": [
     "widget.buttongroup"
   ],
@@ -2583,6 +2983,86 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.dom.GarbageCollector": [],
   "Ext.dom.Layer": [],
   "Ext.dom.Query": [],
+  "Ext.draw.Animator": [],
+  "Ext.draw.Color": [],
+  "Ext.draw.Container": [
+    "widget.draw"
+  ],
+  "Ext.draw.ContainerBase": [],
+  "Ext.draw.Draw": [],
+  "Ext.draw.LimitedCache": [],
+  "Ext.draw.Matrix": [],
+  "Ext.draw.Path": [],
+  "Ext.draw.SegmentTree": [],
+  "Ext.draw.Solver": [],
+  "Ext.draw.Surface": [
+    "widget.surface"
+  ],
+  "Ext.draw.SurfaceBase": [],
+  "Ext.draw.TextMeasurer": [],
+  "Ext.draw.TimingFunctions": [],
+  "Ext.draw.engine.Canvas": [],
+  "Ext.draw.engine.Svg": [],
+  "Ext.draw.engine.SvgContext": [],
+  "Ext.draw.engine.SvgContext.Gradient": [],
+  "Ext.draw.engine.SvgExporter": [],
+  "Ext.draw.gradient.Gradient": [],
+  "Ext.draw.gradient.GradientDefinition": [],
+  "Ext.draw.gradient.Linear": [],
+  "Ext.draw.gradient.Radial": [],
+  "Ext.draw.modifier.Animation": [
+    "modifier.animation"
+  ],
+  "Ext.draw.modifier.Highlight": [
+    "modifier.highlight"
+  ],
+  "Ext.draw.modifier.Modifier": [],
+  "Ext.draw.modifier.Target": [
+    "modifier.target"
+  ],
+  "Ext.draw.sprite.AnimationParser": [],
+  "Ext.draw.sprite.Arc": [
+    "sprite.arc"
+  ],
+  "Ext.draw.sprite.AttributeDefinition": [],
+  "Ext.draw.sprite.AttributeParser": [],
+  "Ext.draw.sprite.Circle": [
+    "sprite.circle"
+  ],
+  "Ext.draw.sprite.Composite": [
+    "sprite.composite"
+  ],
+  "Ext.draw.sprite.Ellipse": [
+    "sprite.ellipse"
+  ],
+  "Ext.draw.sprite.EllipticalArc": [
+    "sprite.ellipticalArc"
+  ],
+  "Ext.draw.sprite.Image": [
+    "sprite.image"
+  ],
+  "Ext.draw.sprite.Instancing": [
+    "sprite.instancing"
+  ],
+  "Ext.draw.sprite.Line": [
+    "sprite.line"
+  ],
+  "Ext.draw.sprite.Path": [
+    "Ext.draw.Sprite",
+    "sprite.path"
+  ],
+  "Ext.draw.sprite.Rect": [
+    "sprite.rect"
+  ],
+  "Ext.draw.sprite.Sector": [
+    "sprite.sector"
+  ],
+  "Ext.draw.sprite.Sprite": [
+    "sprite.sprite"
+  ],
+  "Ext.draw.sprite.Text": [
+    "sprite.text"
+  ],
   "Ext.event.Controller": [],
   "Ext.event.Dispatcher": [],
   "Ext.event.Event": [],
@@ -3301,6 +3781,140 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.util.translatable.CssTransform": [],
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.BoxReorderer": [],
+  "Ext.ux.CellDragDrop": [
+    "plugin.celldragdrop"
+  ],
+  "Ext.ux.DataTip": [
+    "plugin.datatip"
+  ],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.ux.FieldReplicator": [
+    "plugin.fieldreplicator"
+  ],
+  "Ext.ux.GMapPanel": [
+    "widget.gmappanel"
+  ],
+  "Ext.ux.GroupTabPanel": [
+    "widget.grouptabpanel"
+  ],
+  "Ext.ux.GroupTabRenderer": [
+    "plugin.grouptabrenderer"
+  ],
+  "Ext.ux.IFrame": [
+    "widget.uxiframe"
+  ],
+  "Ext.ux.LiveSearchGridPanel": [],
+  "Ext.ux.PreviewPlugin": [
+    "plugin.preview"
+  ],
+  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
+  "Ext.ux.TabCloseMenu": [
+    "plugin.tabclosemenu"
+  ],
+  "Ext.ux.TabReorderer": [],
+  "Ext.ux.TabScrollerMenu": [
+    "plugin.tabscrollermenu"
+  ],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.TreePicker": [
+    "widget.treepicker"
+  ],
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [
+    "simlet.json"
+  ],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [
+    "simlet.basic"
+  ],
+  "Ext.ux.ajax.XmlSimlet": [
+    "simlet.xml"
+  ],
+  "Ext.ux.dashboard.GoogleRssPart": [
+    "part.google-rss"
+  ],
+  "Ext.ux.dashboard.GoogleRssView": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "proxy.pagingmemory"
+  ],
+  "Ext.ux.dd.CellFieldDropZone": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "Ext.ux.desktop.App": [],
+  "Ext.ux.desktop.Desktop": [
+    "widget.desktop"
+  ],
+  "Ext.ux.desktop.Module": [],
+  "Ext.ux.desktop.ShortcutModel": [],
+  "Ext.ux.desktop.StartMenu": [],
+  "Ext.ux.desktop.TaskBar": [
+    "widget.taskbar"
+  ],
+  "Ext.ux.desktop.TrayClock": [
+    "widget.trayclock"
+  ],
+  "Ext.ux.desktop.Video": [
+    "widget.video"
+  ],
+  "Ext.ux.desktop.Wallpaper": [
+    "widget.wallpaper"
+  ],
+  "Ext.ux.event.Driver": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [
+    "widget.eventrecordermanager"
+  ],
+  "Ext.ux.form.ItemSelector": [
+    "widget.itemselector",
+    "widget.itemselectorfield"
+  ],
+  "Ext.ux.form.MultiSelect": [
+    "widget.multiselect",
+    "widget.multiselectfield"
+  ],
+  "Ext.ux.form.SearchField": [
+    "widget.searchfield"
+  ],
+  "Ext.ux.google.Api": [],
+  "Ext.ux.google.Feeds": [],
+  "Ext.ux.grid.FiltersFeature": [
+    "feature.filters"
+  ],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.grid.filter.BooleanFilter": [
+    "gridfilter.boolean"
+  ],
+  "Ext.ux.grid.filter.DateFilter": [
+    "gridfilter.date"
+  ],
+  "Ext.ux.grid.filter.DateTimeFilter": [
+    "gridfilter.datetime"
+  ],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.grid.filter.ListFilter": [
+    "gridfilter.list"
+  ],
+  "Ext.ux.grid.filter.NumericFilter": [
+    "gridfilter.numeric"
+  ],
+  "Ext.ux.grid.filter.StringFilter": [
+    "gridfilter.string"
+  ],
+  "Ext.ux.grid.menu.ListMenu": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "widget.statusbar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "Ext.view.AbstractView": [],
   "Ext.view.BoundList": [
     "widget.boundlist"
@@ -3367,17 +3981,96 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.window.Window": [
     "widget.window"
   ],
+  "ExtThemeNeptune.Component": [],
+  "ExtThemeNeptune.container.ButtonGroup": [],
+  "ExtThemeNeptune.form.field.HtmlEditor": [],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.grid.column.RowNumberer": [],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "ExtThemeNeptune.menu.Separator": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "ExtThemeNeptune.panel.Table": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "ExtThemeNeptune.toolbar.Paging": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
   "Ticket.Application": [],
-  "Ticket.controller.Main": [],
-  "Ticket.view.Main": [
-    "widget.app-main"
+  "Ticket.EntitySimlet": [
+    "simlet.entity"
   ],
-  "Ticket.view.Viewport": []
+  "Ticket.LoginManager": [],
+  "Ticket.SimData": [],
+  "Ticket.controller.Root": [],
+  "Ticket.model.Base": [],
+  "Ticket.model.Comment": [],
+  "Ticket.model.Group": [],
+  "Ticket.model.Organization": [],
+  "Ticket.model.Project": [],
+  "Ticket.model.Ticket": [],
+  "Ticket.model.TicketOpenSummary": [],
+  "Ticket.model.TicketStatusSummary": [],
+  "Ticket.model.User": [],
+  "Ticket.override.data.field.Date": [],
+  "Ticket.override.grid.column.Date": [],
+  "Ticket.view.dashboard.Dashboard": [
+    "widget.app-dashboard"
+  ],
+  "Ticket.view.dashboard.DashboardController": [
+    "controller.dashboard"
+  ],
+  "Ticket.view.dashboard.DashboardModel": [
+    "viewmodel.dashboard"
+  ],
+  "Ticket.view.login.Login": [],
+  "Ticket.view.login.LoginController": [
+    "controller.login"
+  ],
+  "Ticket.view.login.LoginModel": [
+    "viewmodel.login"
+  ],
+  "Ticket.view.main.Main": [],
+  "Ticket.view.main.MainController": [
+    "controller.main"
+  ],
+  "Ticket.view.main.MainModel": [
+    "viewmodel.main"
+  ],
+  "Ticket.view.ticket.Detail": [
+    "widget.ticketdetail"
+  ],
+  "Ticket.view.ticket.DetailController": [
+    "controller.ticketdetail"
+  ],
+  "Ticket.view.ticket.DetailModel": [
+    "viewmodel.ticketdetail"
+  ],
+  "Ticket.view.ticket.Search": [
+    "widget.ticketsearch"
+  ],
+  "Ticket.view.ticket.SearchController": [
+    "controller.ticketsearch"
+  ],
+  "Ticket.view.ticket.SearchModel": [
+    "viewmodel.ticketsearch"
+  ],
+  "Ticket.view.user.Group": [],
+  "Ticket.view.user.GroupController": [
+    "controller.user-group"
+  ],
+  "Ticket.view.user.GroupModel": [
+    "viewmodel.user-group"
+  ],
+  "Ticket.view.user.User": [],
+  "Ticket.view.user.UserController": [
+    "controller.user"
+  ]
 });
 Ext.setVersion("ext", "5.0.0");
 Ext.setVersion("ext-theme-base", "5.0.0");
-Ext.setVersion("ext-theme-classic", "5.0.0");
+Ext.setVersion("ext-theme-neptune", "5.0.0");
 Ext.setVersion("ext-theme-neutral", "5.0.0");
+Ext.setVersion("sencha-charts", "1.0.0");
 Ext.setVersion("sencha-core", "5.0.0");
 
 
@@ -3396,9 +4089,24 @@ Ext.Loader.loadScriptsSync([
   "../../../../sdk/ext/overrides/event/publisher/Gesture.js",
   "../../../../sdk/ext/overrides/Ext-more.js",
   "../../../../sdk/ext/overrides/Widget.js",
-  "../../../../sdk/ext/packages/ext-theme-classic/overrides/toolbar/Toolbar.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/Component.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/toolbar/Toolbar.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/layout/component/Dock.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/panel/Panel.js",
   "../../../../sdk/ext/overrides/app/Application.js",
-  "../../../../sdk/ext/overrides/data/NodeInterface.js"
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/container/ButtonGroup.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/resizer/Splitter.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/toolbar/Paging.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/picker/Month.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/form/field/HtmlEditor.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/panel/Table.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/grid/RowEditor.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/grid/column/RowNumberer.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/menu/Separator.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/menu/Menu.js",
+  "../../../../sdk/ext/overrides/data/NodeInterface.js",
+  "../../../../sdk/ext/packages/ext-theme-neptune/overrides/tab/Tab.js",
+  "../../../../sdk/packages/sencha-charts/overrides/Ext-more.js"
 ]);
 
 
