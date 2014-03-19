@@ -6,7 +6,7 @@ Ext.define "Ticket.view.login.LoginController",
   alias: "controller.login"
   loginText: "Logging in..."
   constructor: ->
-    @callParent arguments_
+    @callParent arguments
     @loginManager = new Ticket.LoginManager(
       session: @session
       model: "User"
@@ -34,7 +34,7 @@ Ext.define "Ticket.view.login.LoginController",
     return
 
   onLoginFailure: ->
-    
+
     # Do something
     Ext.getBody().unmask()
     return
@@ -42,7 +42,7 @@ Ext.define "Ticket.view.login.LoginController",
   onLoginSuccess: (user) ->
     Ext.getBody().unmask()
     org = @getReference("organization").getSelectedRecord()
-    
+
     ###
     @event login
     @param {Ticket.view.login.LoginController} sender The controller firing the event.

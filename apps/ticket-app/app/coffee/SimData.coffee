@@ -2,7 +2,7 @@ Ext.define "Ticket.EntitySimlet",
   extend: "Ext.ux.ajax.JsonSimlet"
   alias: "simlet.entity"
   doPost: (ctx) ->
-    result = @callParent(arguments_)
+    result = @callParent(arguments)
     o = @processData(Ext.decode(ctx.xhr.body))
     item = @getById(@data, o.id, true)
     key = undefined
@@ -17,7 +17,7 @@ Ext.define "Ticket.EntitySimlet",
     return @getById(@data, params.id)  if "id" of params
     delete @currentOrder
 
-    @callParent arguments_
+    @callParent arguments
 
   getById: (data, id) ->
     len = data.length
