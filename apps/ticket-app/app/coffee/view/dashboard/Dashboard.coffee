@@ -58,7 +58,7 @@ Ext.define "Ticket.view.dashboard.Dashboard",
               layout: "fit"
               items:
                 xtype: "chart"
-                
+
                 #bind: '{ticketStatusSummary}',
                 store:
                   fields: [
@@ -94,8 +94,9 @@ Ext.define "Ticket.view.dashboard.Dashboard",
                     }
                   ]
 
-                
-                #colors: ["#115fa6", "#94ae0a", "#a61120", "#ff8809", "#ffd13e", "#a61187", "#24ad9a", "#7c7474", "#a66111"],
+
+                #colors: ["#115fa6", "#94ae0a", "#a61120", "#ff8809", "#ffd13e",
+                #"#a61187", "#24ad9a", "#7c7474", "#a66111"],
                 theme: "Category1"
                 background: "white"
                 interactions: "rotatePie3d"

@@ -35,7 +35,7 @@ Ext.define "Ticket.SimData",
   singleton: true
   dateFormat: "Y-m-d\\TH:i:s\\Z"
   words: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.".replace(/[,\.]/g, "").split(" ")
-  
+
   ###
   We have our own "random" method because we need consistency (for testing).
   ###
@@ -44,7 +44,7 @@ Ext.define "Ticket.SimData",
     multiplier = 1664525
     increment = 1013904223
     seed = 1103515245
-    
+
     # simple LCG
     (min, max) ->
       seed = (multiplier * seed + increment) % modulus
@@ -214,7 +214,7 @@ Ext.define "Ticket.SimData",
       "/organization": makeSim(organizations)
       "/group": Ext.apply(
         processFilters: (filters) ->
-          
+
           # User/Groups is a Many-to-many so Group does not have a field
           # to get groups by userId so we have to look in our internal
           # structure to provide this.
@@ -297,7 +297,7 @@ Ext.define "Ticket.SimData",
 
       "/user": Ext.apply(
         processFilters: (filters) ->
-          
+
           # User/Groups is a Many-to-many so User does not have a field
           # to get users by groupId so we have to look in our internal
           # structure to provide this.

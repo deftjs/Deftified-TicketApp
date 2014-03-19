@@ -46,7 +46,7 @@ Ext.define "Ticket.view.dashboard.DashboardModel",
         }
       ]
 
-    
+
     # TODO: fix store binding for charts
     xticketStatusSummary:
       model: "TicketStatusSummary"
@@ -78,7 +78,7 @@ Ext.define "Ticket.view.dashboard.DashboardModel",
         data
       )()
 
-    
+
     # TODO: fix store binding for charts
     xticketOpenSummary:
       model: "TicketOpenSummary"
@@ -119,4 +119,4 @@ Ext.define "Ticket.view.dashboard.DashboardModel",
 #                direction: 'DESC'
 #            }]
 #        }
-#        
+#

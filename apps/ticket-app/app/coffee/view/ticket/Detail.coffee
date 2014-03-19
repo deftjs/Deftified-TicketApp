@@ -113,9 +113,13 @@ Ext.define "Ticket.view.ticket.Detail",
       autoScroll: true
       emptyText: "There are no comments"
       itemTpl: [
-        "<div class=\"header\"><span class=\"created\">{created:date(\"Y-m-d H:i\")}</span> - <span class=\"user\">{user.name}</span></div>"
-        "<div class=\"content\">{text}</div>"
-        "<tpl if=\"xindex !== xcount\"><hr /></tpl>"
+        """
+        <div class="header">
+          <span class="created">{created:date("Y-m-d H:i")}</span> - <span class="user">{user.name}</span>
+        </div>
+        <div class="content">{text}</div>
+        <tpl if="xindex !== xcount"><hr /></tpl>
+        """
       ]
     }
   ]

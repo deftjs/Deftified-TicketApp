@@ -1,6 +1,6 @@
 ###
-This view is the ticket search grid. It is created one instance per project and added
-as a tab.
+This view is the ticket search grid. It is created one instance per project and
+added as a tab.
 ###
 Ext.define "Ticket.view.ticket.Search",
   extend: "Ext.grid.Panel"
@@ -11,7 +11,7 @@ Ext.define "Ticket.view.ticket.Search",
     "Ext.form.field.ComboBox"
     "Ticket.override.grid.column.Date"
   ]
-  
+
   # Connects to our View Controller (Ticket.view.ticket.SearchController) and View Model
   # (Ticket.view.ticket.SearchModel).
   controller: "ticketsearch"
@@ -31,7 +31,7 @@ Ext.define "Ticket.view.ticket.Search",
       displayField: "name"
       valueField: "id"
       autoLoadOnValue: true
-      
+
       # Giving this component a "reference" gives it a name for us in our View Controller
       # and View Model. In this case, we need the selection ("value") of this field to
       # control the filter of the grid's store. That is handled in the View Model's
@@ -50,7 +50,7 @@ Ext.define "Ticket.view.ticket.Search",
       editable: false
       displayField: "name"
       valueField: "id"
-      
+
       # This field's selection ("value") is also needed in the grid's store filter.
       reference: "statusField"
       publishes: ["value"]
