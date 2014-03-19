@@ -4,16 +4,13 @@ var gulp = require('gulp'),
 
 gulp.task('coffee', function() {
   gulp.src('./apps/ticket-app/app/coffee/**/*.coffee')
-      .pipe(coffee())
+      .pipe(coffee({ bare: true, sourceMap: true }))
       .pipe(gulp.dest('./apps/ticket-app/app/js'));
 });
 
 gulp.task('lint', function() {
   gulp.src('./apps/ticket-app/app/coffee/**/*.coffee')
-    .pipe(lint({
-      bare: true,
-      sourceMap: true
-    }))
+    .pipe(lint())
     .pipe(lint.reporter());
 });
 
