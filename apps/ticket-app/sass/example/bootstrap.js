@@ -1285,9 +1285,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.ux": "../../../../sdk/ext/examples/ux",
   "Ext.ux.desktop.TrayClock": "../../../../sdk/ext/examples/ux/desktop/TaskBar.js",
   "ExtThemeNeptune": "../../../../sdk/ext/packages/ext-theme-neptune/overrides",
-  "Ticket": "../../app",
-  "Ticket.EntitySimlet": "../../app/SimData.js",
-  "Ticket.model.Ticket": "../../app/model/Ticket.js"
+  "Ticket": "../../app/js",
+  "Ticket.EntitySimlet": "../../app/js/SimData.js",
+  "Ticket.model.Ticket": "../../app/js/model/Ticket.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractManager": [],
