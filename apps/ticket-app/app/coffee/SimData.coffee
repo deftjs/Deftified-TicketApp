@@ -50,7 +50,7 @@ Ext.define "Ticket.SimData",
       seed = (multiplier * seed + increment) % modulus
       x = seed / (modulus - 1) # [0, 1]
       Math.floor x * (max - min + 1) + min
-  ())
+  ).call(@)
   sentence: (min, max) ->
     length = @random((if Ext.isDefined(min) then min else 10), max or 30)
     words = @words
